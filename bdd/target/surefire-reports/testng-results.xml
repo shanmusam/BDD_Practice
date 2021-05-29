@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-12T22:45:07 IST" name="Practice Suite" finished-at="2021-05-12T22:45:28 IST" duration-ms="20978">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sample.bdd.Runner@1af2d44a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-05-12T22:45:07 IST" name="Test Basics 1" finished-at="2021-05-12T22:45:28 IST" duration-ms="20978">
+      <class name="sample.bdd.Runner">
+        <test-method is-config="true" signature="bsdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:07 IST" name="bsdisplay" finished-at="2021-05-12T22:45:07 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsdisplay -->
+        <test-method is-config="true" signature="btdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:07 IST" name="btdisplay" finished-at="2021-05-12T22:45:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btdisplay -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:07 IST" name="setUpClass" finished-at="2021-05-12T22:45:07 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="bcdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:07 IST" name="bcdisplay" finished-at="2021-05-12T22:45:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcdisplay -->
+        <test-method is-config="true" signature="bmdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:07 IST" name="bmdisplay" finished-at="2021-05-12T22:45:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmdisplay -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-12T22:45:19 IST" duration-ms="11977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["basic launch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Testing a basic cucumber feature with framework]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="amdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:19 IST" name="amdisplay" finished-at="2021-05-12T22:45:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amdisplay -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-12T22:45:27 IST" duration-ms="8769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["basic mid launch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Testing a basic cucumber feature with framework]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="bmdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:19 IST" name="bmdisplay" finished-at="2021-05-12T22:45:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmdisplay -->
+        <test-method is-config="true" signature="amdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:27 IST" name="amdisplay" finished-at="2021-05-12T22:45:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amdisplay -->
+        <test-method is-config="true" signature="acdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:27 IST" name="acdisplay" finished-at="2021-05-12T22:45:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acdisplay -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:27 IST" name="tearDownClass" finished-at="2021-05-12T22:45:28 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="atdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:28 IST" name="atdisplay" finished-at="2021-05-12T22:45:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atdisplay -->
+        <test-method is-config="true" signature="asdisplay()[pri:0, instance:sample.bdd.Runner@1af2d44a]" started-at="2021-05-12T22:45:28 IST" name="asdisplay" finished-at="2021-05-12T22:45:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asdisplay -->
+      </class> <!-- sample.bdd.Runner -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Practice Suite -->
+</testng-results>
