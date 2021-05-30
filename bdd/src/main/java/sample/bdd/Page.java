@@ -13,14 +13,5 @@ public abstract class Page extends CommonMethods{
 	public abstract boolean checkPageLoad();
 	public abstract void populateFields(DataTable table);
 	
-	public static Page createPage(String pageName, WebDriver driver) {
-		switch (pageName.toLowerCase().replace(" ", "")) {
-		case "home":
-			return new HomePage(driver);
-		case "simpleform":
-			return new SimpleFormPage(driver);
-		}
-		return null;
-	}
 	
 }

@@ -1,5 +1,6 @@
 package sample.bdd;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -14,14 +15,12 @@ import io.cucumber.java.en.When;
 
 
 
-public class StepDefinition extends RuntimeSettings{
+public class StepDefinition extends Utils{
 
-	private RuntimeSettings settings;
 	
-	public StepDefinition(RuntimeSettings settings) {
-		this.settings = settings;
-	}
+	public StepDefinition(RuntimeSettings settings) {super(settings);}
 	
+
 	@Given("I launch browser")
 	public void Initialise() {
 		System.setProperty("webdriver.chrome.driver", settings.dirPath+settings.properties.getProperty("chromeDriver"));
@@ -38,7 +37,31 @@ public class StepDefinition extends RuntimeSettings{
 	
 	@Then("I should be displayed with \"([^\"]*)\" Page$")
 	public void pageDisplayed(String pageName) {
-		settings.page = Page.createPage(pageName, settings.driver);
+		try {
+			settings.page = (Page) Class.forName("sample.bdd."+pageName)
+					.getConstructor(WebDriver.class)
+					.newInstance(settings.driver);
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}catch(NoSuchMethodException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Assert.assertEquals(settings.page.checkPageLoad(), true); 
 	}
 	

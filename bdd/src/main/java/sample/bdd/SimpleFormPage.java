@@ -51,8 +51,8 @@ public class SimpleFormPage extends Page{
 	public void populateFields(DataTable table) {
 		// TODO Auto-generated method stub
 		List<SimpleFormData> data = new ArrayList<SimpleFormData>();
-		data = table.asList(SimpleFormData.class);
-		System.out.println(data);
+		System.out.println(table.asList(SimpleFormData.class));
+		//System.out.println(data);
 	}
 	
 	public class SimpleFormData{
